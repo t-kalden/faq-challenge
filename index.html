@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: "WorkSans";
+      src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      height: 100%;
+      width: 100%;
+      background-color: #f9eeff;
+      margin: 0;
+      padding: 0;
+    }
+    .banner {
+      height: 250px;
+      width: 100%;
+      background-image: url(./assets/images/background-pattern-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+    }
+    .faq-container {
+      width: 80%;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      font-family: 'WorkSans';
+      border-radius: 10px;
+      position: absolute;
+      top: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+    }
+    .faq-container h1::before {
+      content: '';
+      height: 24px;
+      width: 24px;
+      background-image: url(./assets/images/icon-star.svg);
+      display: inline-block;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 30px;
+    }
+    .text-container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 25px 0 25px 0;
+    }
+    .faq-container h1 {
+      font-weight: bold;
+      color: #241b26;
+      margin: 0;
+    }
+    .question-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .question-container .question {
+      color: #241b26;
+      font-weight: bolder;
+      font-size: larger;
+      line-height: 1.5rem;
+    }
+    .answer-container p {
+      color: gray;
+      margin: 0;
+      line-height: 1.5rem;
+      padding-bottom: 20px;
+    }
+    section {
+      border-bottom: 1px solid rgb(214, 214, 214);
+    }
+    section:last-child {
+      border: 0px;
+    }
+
+    .active .answer-container {
+      display: block;
+    }
+    .active .open {
+      display: none;
+    }
+    .active .close {
+      display: block;
+    }
+    .close {
+      display: none;
+    }
+
+    @media (max-width: 460px) {
+      .banner {
+        height: 250px;
+        width: 100%;
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .faq-container {
+        max-width: 380px;
+        height: auto;
+      }
+      .question-container {
+        padding-top: 5px;
+        font-size: small;
+      }
+      .question-container p {
+        max-width: 260px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+  </div>
+
+  <div class="faq-container">
+    <div class="text-container">
+      <h1>FAQs</h1>
+      <section>
+        <div class="question-container"> 
+          <p class="question">What is Frontend Mentor, and how will it help me?</p>
+          <img class="close" src="/assets/images/icon-minus.svg" alt="Minus Icon">
+          <img class="open" src="/assets/images/icon-plus.svg" alt="Plus Icon">
+        </div>
+        <div class="close" class="answer-container">
+          <p>
+            Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="question-container"> 
+          <p class="question">Is Frontend Mentor free?</p>
+          <img class="close" src="/assets/images/icon-minus.svg" alt="Minus Icon">
+          <img class="open" src="/assets/images/icon-plus.svg" alt="Plus Icon">
+        </div>
+        <div class="close" class="answer-container">
+          <p>
+            Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="question-container"> 
+          <p class="question">Can I use Frontend Mentor projects in my portfolio?</p>
+          <img class="close" src="/assets/images/icon-minus.svg" alt="Minus Icon">
+          <img class="open" src="/assets/images/icon-plus.svg" alt="Plus Icon">
+        </div>
+        <div class="close" class="answer-container">
+          <p>
+            Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="question-container"> 
+          <p class="question">How can I get help if I'm stuck on a Frontend Mentor challenge?</p>
+          <img class="close" src="/assets/images/icon-minus.svg" alt="Minus Icon">
+          <img class="open" src="/assets/images/icon-plus.svg" alt="Plus Icon">
+        </div>
+        <div class="close" class="answer-container">
+          <p>
+            The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+
+  <!-- FAQs
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+   -->
+
+</body>
+</html>
